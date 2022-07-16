@@ -1,0 +1,666 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font: inherit;
+}
+
+body {
+      background-color: hsl(27, 66%, 92%);
+      width: 100%;
+      height: 100vh;
+      font-family: 'DM Sans', sans-serif;
+
+}
+
+.container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+      gap: 30px;
+}
+
+.balance-box {
+      width: 550px;
+      padding: 25px;
+      background-color: hsl(10, 79%, 65%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+}
+
+.balance-box p {
+      font-size: 18px;
+      line-height: 1.8;
+      font-weight: 400;
+      font-family:'DM Sans', sans-serif;
+      color: hsl(27, 66%, 92%);
+}
+
+.balance-box span {
+      font-size: 30px;
+      font-weight: 700;
+      font-family:'DM Sans', sans-serif;
+      color: #fff;
+}
+
+.shape {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.shape1 {
+      width: 50px;
+      height: 50px;
+      border: 2px solid white;
+      background-color: transparent;
+      border-radius: 50%;
+      position: relative;
+      left: 25px;
+
+}
+
+.shape2 {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 50%;
+      background-color: hsl(25, 47%, 15%);
+}
+
+/**/
+
+.statistic {
+      width: 550px;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 20px;
+      transition: background-color .3s, color .3s;
+}
+
+.spending h1 {
+      font-weight: 700;
+      font-size: 30px;
+      font-family:'DM Sans', sans-serif;
+      letter-spacing: 0.02vw;
+      margin-top: 20px;
+}
+
+.lock-st {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 40px;
+}
+
+.lock-st p {
+      opacity: 0.5;
+}
+
+/*st1*/
+
+.st-1 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 130px;
+      z-index: 1;
+}
+
+.st-1 .st1box {
+      background-color: hsl(10, 79%, 65%);
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      transition: all .3s;
+}
+
+/* .st1box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/*st2*/
+
+.st-2 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 90px;
+      z-index: 1;
+}
+
+.st-2 .st2box {
+      background-color: hsl(10, 79%, 65%);
+      width: 50px;
+      height: 90px;
+      border-radius: 5px;
+}
+
+/* .st2box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/*st3*/
+
+.st-3 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 30px;
+      z-index: 1;
+}
+
+.st-3 .st3box {
+      background-color: hsl(186, 34%, 60%);
+      width: 50px;
+      height: 150px;
+      border-radius: 5px;
+}
+
+/* .st3box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/*st4*/
+
+.st-4 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 100px;
+      z-index: 1;
+}
+
+.st-4 .st4box {
+      background-color: hsl(10, 79%, 65%);
+      width: 50px;
+      height: 80px;
+      border-radius: 5px;
+}
+
+/* .st4box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/*st5*/
+
+.st-5 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 120px;
+      z-index: 1;
+}
+
+.st-5 .st5box {
+      background-color: hsl(10, 79%, 65%);
+      width: 50px;
+      height: 60px;
+      border-radius: 5px;
+}
+
+/* .st5box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/*st6*/
+
+.st-6 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 50px;
+      z-index: 1;
+}
+
+.st-6 .st6box {
+      background-color: hsl(10, 79%, 65%);
+      width: 50px;
+      height: 130px;
+      border-radius: 5px;
+}
+
+/* .st6box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/*st7*/
+
+.st-7 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 110px;
+      z-index: 1;
+}
+
+.st-7 .st7box {
+      background-color: hsl(10, 79%, 65%);
+      width: 50px;
+      height: 70px;
+      border-radius: 5px;
+}
+
+/* .st7box:hover {
+      background-color: hsl(186, 34%, 60%);
+      transition: background-color .3s;
+} */
+
+/**/
+
+.month {
+      margin-top: 35px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.l-para p {
+      font-weight: 400;
+      font-size: 18px;
+      font-family:'DM Sans', sans-serif;
+      opacity: 0.6;
+}
+
+.l-para span {
+      font-size: 50px;
+      font-weight: 700;
+      font-family:'DM Sans', sans-serif;
+}
+
+.r-para {
+      position: relative;
+      top: 25px;
+      text-align: right;
+}
+
+.r-para span {
+      font-weight: 700;
+      font-family:'DM Sans', sans-serif;
+      font-size: 22px;
+}
+
+.r-para p {
+      font-weight: 400;
+      font-family:'DM Sans', sans-serif;
+      font-size: 18px;
+      opacity: 0.7;
+      letter-spacing: 0.1vw;
+}
+
+/*js*/
+
+/*st-1*/
+
+.overlay1 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.st-overlay1 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup1 {
+      opacity: 0.8;
+}
+
+/*st-2*/
+
+.overlay2 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.st-overlay2 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup2 {
+      opacity: 0.8;
+}
+
+/*st-3*/
+
+.overlay3 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.st-overlay3 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup3 {
+      opacity: 0.8;
+}
+
+/*st-4*/
+
+.overlay4 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.st-overlay4 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup4 {
+      opacity: 0.8;
+}
+
+/*st-5*/
+
+.overlay5 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.st-overlay5 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup5 {
+      opacity: 0.8;
+}
+
+/*st-6*/
+
+.overlay6 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.st-overlay6 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup6 {
+      opacity: 0.8;
+}
+
+/*st-7*/
+
+.overlay7 {
+      font-size: 17px;
+      font-weight: 700;
+      padding: 10px;
+      background-color: hsl(25, 47%, 15%);
+      color: #fff;
+      border-radius: 5px;
+
+      position: relative;
+      top: 55px;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.lay {
+      font-family: 'DM Sans', sans-serif;
+}
+
+.st-overlay7 {
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s;
+}
+
+.back-grup7 {
+      opacity: 0.8;
+}
+
+/**/
+
+.active1 {
+      background-color: #000;
+      color: #fff;
+      transition: background-color .3s, color .3s;
+}
+
+.active3 {
+      background-color: #fff;
+      color: #000;
+      transition: background-color .3s, color .3s;
+      top: 0;
+      transform: scale(1);
+      opacity: 1;
+      transition: transform .5s, opacity .3s, top .3s, background-color .3s, color .3s;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+      .balance-box {
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+      }
+
+      .shape1 {
+            width: 40px;
+            height: 40px;
+            left: 18px;
+      }
+
+      .shape2 {
+            width: 40px;
+            height: 40px;
+      }
+
+      /**/
+
+      .statistic {
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+      }
+
+      .spending h1 {
+            font-size: 20px;
+            margin-top: 10px;
+      }
+
+      .lock-st {
+            margin-top: 0;
+            margin-bottom: 20px;
+      }
+      
+      .st-1 .st1box {
+            width: 30px;
+            height: 50px;
+      }
+
+      .overlay1 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .st-2 .st2box {
+            width: 30px;
+            height: 90px;
+      }
+
+      .overlay2 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .st-3 .st3box {
+            width: 30px;
+            height: 150px;
+      }
+
+      .overlay3 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .st-4 .st4box {
+            width: 30px;
+            height: 80px;
+      }
+
+      .overlay4 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .st-5 .st5box {
+            width: 30px;
+            height: 60px;
+      }
+
+      .overlay5 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .st-6 .st6box {
+            width: 30px;
+            height: 130px;
+      }
+
+      .overlay6 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .st-7 .st7box {
+            width: 30px;
+            height: 70px;
+      }
+
+      .overlay7 {
+            font-size: 10px;
+            padding: 5px;
+      }
+
+      .month {
+            margin-top: 25px;
+            margin-bottom: 10px;
+      }
+
+      .l-para span {
+            font-size: 35px;
+      }
+
+      .r-para {
+            top: 18px;
+      }
+
+      .r-para span {
+            font-size: 18px;
+      }
+
+      .r-para p {
+            font-size: 16px;
+      }
+}
